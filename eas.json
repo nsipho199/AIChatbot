@@ -7,13 +7,3 @@
     }
   }
 }
-EOFcat > eas.json << 'EOF'
-{
-  "build": {
-    "production": {
-      "android": {
-        "buildType": "apk"
-      }
-    }
-  }
-}
