@@ -1,4 +1,4 @@
-name: Android Build
+name: Build Android APK
 
 on:
   push:
@@ -20,5 +20,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Expo export
-        run: npx expo export
+      - name: Install EAS CLI
+        run: npm install -g eas-cli
+
+      - name: Build APK
+        env:
+          EXPO_TOKEN: ${{ secrets.EXPO_TOKEN }}
+        run: eas build -p android --profile production --non-interactive
