@@ -1,5 +1,34 @@
-.npm-cache
+# Node / Expo
 node_modules
 .expo
+npm-cache
 dist
 build
+
+# Android / Gradle
+.gradle/
+build/
+local.properties
+*.log
+*.apk
+*.aab
+output-metadata.json
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+
+# Native build
+.cxx/
+.externalNativeBuild/
+captures/
+
+# Keystores
+*.jks
+*.keystore
+
+# Firebase / Google services
+google-services.json
+
+# OS / misc
+.DS_Store
